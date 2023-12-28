@@ -2,7 +2,7 @@
   "version": "1",
   "cognitoConfig": {
     "identityPoolName": "amplify09e25f37_identitypool_09e25f37",
-    "allowUnauthenticatedIdentities": true,
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "amplif09e25f37",
     "userPoolName": "amplify09e25f37_userpool_09e25f37",
     "autoVerifiedAttributes": [
@@ -36,11 +36,8 @@
     "sharedId": "09e25f37",
     "resourceName": "amplify09e25f37",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "manual",
-    "userPoolGroupList": [
-      "Admins",
-      "admins"
-    ],
+    "useDefault": "defaultSocial",
+    "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
     "useEnabledMfas": true,
@@ -58,16 +55,11 @@
     },
     "breakCircularDependency": true,
     "dependsOn": [],
-    "hostedUI": false,
-    "authProviders": [],
-    "thirdPartyAuth": true,
-    "userPoolGroups": true,
-    "adminQueries": true,
-    "triggers": {},
-    "adminQueryGroup": "Admins",
-    "parentStack": {
-      "Ref": "AWS::StackId"
-    },
-    "permissions": []
+    "hostedUI": true,
+    "hostedUIDomainName": "amplify34023435-34023435",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"http://localhost:3000/\",\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+    "authProviders": []
   }
 }
